@@ -1,0 +1,133 @@
+.hero {
+  position: relative;
+  padding-bottom: 63px;
+
+  &__text {
+    position: relative;
+    margin-top: 118px;
+
+    &-circle {
+      position: absolute;
+      fill: #fff;
+      width: 253px;
+      height: 253px;
+      bottom: -38px;
+      left: -130px;
+      z-index: 1
+    }
+
+    &-triangle {
+      position: absolute;
+      fill: #D40000;
+      width: 90px;
+      height: 75px;
+      bottom: 104px;
+      left: -163px;
+      z-index: 2;
+    }
+  }
+
+  &__name {
+    position: relative;
+    font-size: 28px;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 32px;
+    z-index: 2;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 74px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.22px;
+    margin: 0;
+    margin-bottom: 105px;
+    z-index: 2;
+  }
+}
+
+.hero-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 61px;
+  border-bottom: 1px solid $dark-black;
+}
+
+.hero-text {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 40px;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 20px;
+    top: 0;
+    right: 9px;
+  }
+}
+
+.social {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  position: relative;
+  z-index: 10;
+
+  &__circle {
+    position: absolute;
+    fill: #fff;
+    width: 106px;
+    height: 106px;
+    bottom: -46px;
+    right: 38px;
+  }
+
+  &__item {
+    font-size: 16px;
+
+    &_wand {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        opacity: .2;
+        width: 1px;
+        height: 24px;
+        background: $dark-black;
+        top: calc(50% - 12px);
+        left: -29px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        opacity: .2;
+        width: 1px;
+        height: 24px;
+        background: $dark-black;
+        top: calc(50% - 12px);
+        right: -29px;
+      }
+    }
+  }
+
+  &__link {
+
+  }
+}
+
+

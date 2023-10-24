@@ -1,0 +1,27 @@
+
+.skill {
+  padding-bottom: 181px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex: 0 0 23%;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  &__desc {
+    line-height: 21px;
+    margin: 0;
+  }
+}

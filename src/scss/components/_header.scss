@@ -1,0 +1,50 @@
+.header {
+  padding-top: 31px;
+  margin-bottom: 53px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+
+  &__list {
+    display: flex;
+    gap: 28px;
+}
+
+  &__item {
+
+}
+
+  &__link {
+
+  }
+}
+
+.address {
+  font-style: normal;
+  position: relative;
+
+
+  &__tel {
+    margin-right: 23px;
+  }
+
+  &__email {
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      background-color: $dark-black;
+      height: 24px;
+      width: 1px;
+      bottom: -4px;
+      left: 125px;
+      opacity: 0.3;
+    };
+  }
+}
+

@@ -1,0 +1,100 @@
+.portfolio {
+  padding-bottom: 200px;
+
+  &__title {
+    font-size: 74px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+}
+
+  .button {
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+
+  }
+
+  &__btn {
+    color: $dark-black;
+    opacity: 40%;
+    cursor: pointer;
+  }
+
+  &__active {
+    color: $dark-black;
+    border-bottom: 2px solid $dark-black;
+    opacity: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+.portfolio-background {
+  background: linear-gradient(180deg, #E7E6E6 0%, rgba(230.56, 230.24, 229.60, 0) 100%);
+}
+
+.portfolio {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__subtitle {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+  .work {
+
+  &__list {
+
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    padding-left: 10px;
+
+    &::after {
+      position: absolute;
+      content: "-";
+      display:block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__item:nth-child(3) {
+    margin-bottom: 50px;
+  }
+
+  &__item:last-child::after {
+    display: none;
+  }
+}
+
+
