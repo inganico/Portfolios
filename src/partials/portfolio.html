@@ -1,27 +1,30 @@
 <section class="portfolio">
-  <div class="container">
+  <div class="container container-circle">
     <h2 class="portfolio__title">Портфолио</h2>
+    <svg class="portfolio__circle" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="53" cy="53" r="53"/>
+    </svg>
     <ul class="button__list list-reset">
       <li class="button__item">
-        <button class="button__btn btn-reset button__active">Лендинги</button>
+        <button class="button__btn btn-reset" data-tab="#tab_1">Лендинги</button>
       </li>
       <li class="button__item">
-        <button class="button__btn btn-reset">Корпоративные сайты</button>
+        <button class="button__btn btn-reset" data-tab="#tab_2">Корпоративные сайты</button>
       </li>
       <li class="button__item">
-        <button class="button__btn btn-reset">Интернет-магазины</button>
+        <button class="button__btn btn-reset" data-tab="#tab_3">Интернет-магазины</button>
       </li>
     </ul>
   </div>
   <div class="portfolio-background">
     <div class="container">
-      <ul class="portfolio__list list-reset">
+      <ul class="portfolio__list list-reset" id="tab_1">
         <li class="portfolio__item">
           <h2 class="portfolio__subtitle">Agata Bielen</h2>
           <ul class="work__list list-reset">
-            <li class="work__item"><p>верстка по макету из Figma</p></li>
-            <li class="work__item"><p>наполнение сайта контентом</p></li>
-            <li class="work__item"><p>внедрена функция добавления видео</p></li>
+            <li class="work__item"><p class="work__desc">-верстка по макету из Figma</p></li>
+            <li class="work__item"><p class="work__desc">-наполнение сайта контентом</p></li>
+            <li class="work__item"><p class="work__desc">-внедрена функция добавления видео</p></li>
             <li class="work__item"><p class="portfolio__desc">Затрачено времени: 5 рабочих дней</p></li>
           </ul>
         </li>
@@ -29,13 +32,13 @@
           <img class="wrap-img__image" src="img/agata.png" alt="Agata Bielen">
         </div>
       </ul>
-      <ul class="portfolio__list list-reset">
+      <ul class="portfolio__list list-reset" id="tab_2">
         <li class="portfolio__item">
           <h2 class="portfolio__subtitle">Lemon</h2>
           <ul class="work__list list-reset">
-            <li class="work__item"><p>верстка по макету из PSD</p></li>
-            <li class="work__item"><p>доступен функционал получения заказов</p></li>
-            <li class="work__item"><p>реализована кнопка «Заказать в 1 клик»</p></li>
+            <li class="work__item"><p class="work__desc">- верстка по макету из PSD</p></li>
+            <li class="work__item"><p class="work__desc">- доступен функционал получения заказов</p></li>
+            <li class="work__item"><p class="work__desc">- реализована кнопка «Заказать в 1 клик»</p></li>
             <li class="work__item"><p class="portfolio__desc">Затрачено времени: 7 рабочих дней</p></li>
           </ul>
         </li>
@@ -43,7 +46,11 @@
           <img class="wrap-img__image" src="img/lemon.png" alt="Lemon">
         </div>
       </ul>
-
+    </div>
+  </div>
+  <div class="container">
+    <div class="marketing">
+      <p class="marketing__desc">Помимо создания сайтов и посадочных страниц я занимаюсь: настройкой контекстной рекламы в системах Яндекс.Директ и Google AdWords, а так же поисковым продвижением сайтов</p>
     </div>
   </div>
 </section>
