@@ -1,0 +1,28 @@
+.price {
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__border {
+    border-bottom: 2px solid $dark-black;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 42px;
+    letter-spacing: 0.84px;
+    margin-top: 27px;
+  }
+
+  &__desc {
+    font-size: 28px;
+    line-height: 42px;
+    flex: 0 0 49%;
+  }
+}
