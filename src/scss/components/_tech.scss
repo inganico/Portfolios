@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 32px 20px;
+    padding: 30px 20px;
     width: 100%;
     height: 100%;
     border: 1px solid $color-grid
@@ -25,8 +25,6 @@
     line-height: 15px;
     color: rgb(255, 255, 255, .7);
     text-align: center;
-    width: 80px;
-    height: 80px;
 
     &::after {
       content: attr(data-text);
@@ -36,7 +34,7 @@
       height: 130px;
       background-color: #E31B1B;
       padding: 35px 15px 27px 15px;
-      top: 110px;
+      top: 95px;
       left: -77px;
       right: 0;
       bottom: 0;
@@ -50,7 +48,7 @@
       content: '';
       display: block;
       position: absolute;
-      top: 99px;
+      top: 85px;
       left: 25px;
       width: 0;
       height: 0;
@@ -70,8 +68,6 @@
   }
 
   &__img {
-    //width: 100%;
-    //height: 100%;
     filter: grayscale(100%);
     opacity: 30%;
     cursor: pointer;
