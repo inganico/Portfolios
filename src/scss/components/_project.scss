@@ -1,0 +1,53 @@
+.project {
+  padding-bottom: 92px;
+
+  &__wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &::after {
+      content:'';
+      position: absolute;
+      display: block;
+      border-bottom: 1px solid $dark-black;
+      width: 100%;
+      bottom: -32px;
+      z-index: 20;
+    }
+  }
+
+  &__svg-circle {
+    position: absolute;
+    color: #fff;
+    display: block;
+    top: 0;
+    left: -154px;
+    z-index: 5;
+  }
+
+  &__svg-triangle {
+    position: absolute;
+    color: $red-color;
+    top: 54px;
+    left: -177px;
+    z-index: 10;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 42px;
+    letter-spacing: 0.84px;
+    margin-top: 27px;
+    z-index: 20;
+  }
+
+  &__desc {
+    font-size: 28px;
+    line-height: 42px;
+    flex: 0 0 49%;
+  }
+}

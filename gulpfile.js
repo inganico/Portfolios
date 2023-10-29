@@ -251,8 +251,12 @@ const htmlInclude = () => {
 const watchFiles = () => {
   browserSync.init({
     server: {
-      baseDir: `${buildFolder}`
+      baseDir: `${buildFolder}`,
     },
+    notify: false,
+    online: true,
+    tunnel: "test", // или true если нужен рандомный туннель
+    //browser: "chrome",
   });
 
   watch(paths.srcScss, styles);
