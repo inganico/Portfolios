@@ -1,0 +1,35 @@
+.footer {
+  padding-bottom: 50px;
+
+  &__nav {
+    position: relative;
+    margin-bottom: 19px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-top: 1px solid $dark-black;
+      width: 100%;
+      top: -55px;
+      left: 0;
+    }
+  }
+}
+
+.copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    color: $dark-black;
+    opacity: 50%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+
+

@@ -6,6 +6,11 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+
+}
+
+:root {
+  scroll-behavior: smooth;
 }
 
 .page {

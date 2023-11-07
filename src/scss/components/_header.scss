@@ -19,20 +19,48 @@
 }
 
   &__link {
+    transition: color 0.3s linear;
 
+    &:hover {
+      color: $red-color;
+    }
+
+    &:active {
+      color: rgb(129, 126, 126);
+    }
   }
 }
 
 .address {
+  display: flex;
+  align-items: center;
   font-style: normal;
   position: relative;
 
 
   &__tel {
     margin-right: 23px;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $red-color;
+    }
+
+    &:active {
+      color: rgb(129, 126, 126);
+    }
   }
 
   &__email {
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $red-color;
+    }
+
+    &:active {
+      color: rgb(129, 126, 126);
+    }
 
     &::after {
       content: '';
