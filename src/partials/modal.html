@@ -1,0 +1,30 @@
+<section class="modal" id="modal-open">
+    <div class="modal__box">
+      <button class="modal__close-btn" id="modal__close-btn"></button>
+      <div class="modal__wrap-text">
+        <h2 class="modal__title">Расскажите о своем проекте</h2>
+        <p class="modal__text">Заполните все поля, и я свяжусь с вами в ближайшее время</p>
+      </div>
+      <div class="group">
+        <form class="form modal-form">
+          <label class="form__label" for="phone">Телефон или почта</label>
+          <input class="form__input" type="text" id="phone" placeholder="Введите телефон">
+          <label class="form__label" for="phone">Выберите удобный способ связи</label>
+          <div class="form-group">
+              <div class="dropdown modal__dropdown">
+                  <div class="dropdown__button">Telegram</div>
+                  <ul class="dropdown__list">
+                  <li class="dropdown__list-item" data-value="travel">WhatsApp</li>
+                  <li class="dropdown__list-item" data-value="lessons">Viber</li>
+                  <li class="dropdown__list-item" data-value="photo">Звонок на телефон</li>
+                  <li class="dropdown__list-item" data-value="sport">SMS сообщение</li>
+                  </ul>
+              <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+              </div>
+          </div>
+        </form>
+        <button class="form__btn">Отправить</button>
+      </div>
+    </div>
+
+</section>
