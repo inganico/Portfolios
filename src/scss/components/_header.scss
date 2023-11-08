@@ -3,15 +3,32 @@
   margin-bottom: 53px;
 }
 
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
 
+  @include small-tablet {
+    justify-content: flex-end;
+  }
+
+
   &__list {
     display: flex;
     gap: 28px;
+
+    @include small-tablet {
+      display: block;
+      position: absolute;
+      right: -350px;
+      top: 0;
+      width: 350px;
+      background-color: antiquewhite;
+      padding: 100px 20px 20px 20px;
+      z-index: 1;
+    }
 }
 
   &__item {
@@ -20,6 +37,13 @@
 
   &__link {
     transition: color 0.3s linear;
+
+    @include small-tablet {
+      font-size: 21px;
+      display: block;
+      padding: 10px 0;
+    }
+
 
     &:hover {
       color: $red-color;
@@ -36,6 +60,10 @@
   align-items: center;
   font-style: normal;
   position: relative;
+
+  @include small-tablet {
+    display: none;
+  }
 
 
   &__tel {
@@ -76,3 +104,7 @@
   }
 }
 
+.header.opens .nav__list {
+  visibility: visible;
+  right: 0px;
+}

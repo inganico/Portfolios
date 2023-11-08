@@ -14,6 +14,7 @@
   opacity: 0;
   transition:  opacity .4s ease, visibility .4s ease;
 
+
   &__box {
     max-width: 600px;
     z-index: 1;
@@ -120,3 +121,4 @@
   border-top: 1px solid $dark-black;
   padding-top: 45px;
 }
+
