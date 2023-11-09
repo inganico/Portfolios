@@ -9,7 +9,7 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
-  z-index: 2;
+  z-index: 10;
   display: none;
 
   @include small-tablet {
@@ -24,7 +24,7 @@
     height: 2px;
     right: 20px;
     background-color: black;
-    z-index: 3;
+    z-index: 10;
     transition: background-color 0.5s, opacity 0.25s, transform 0.5s;
     will-change: transform;
     display: none;

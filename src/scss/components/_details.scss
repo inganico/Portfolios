@@ -20,6 +20,10 @@
     font-size: 28px;
     line-height: 42px;
     font-weight: 400;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
   }
 
   &__span {

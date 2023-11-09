@@ -18,6 +18,10 @@
     line-height: 42px;
     letter-spacing: 0.84px;
     margin: 0;
+
+    @include small-tablet {
+      font-size: 24px;
+    }
   }
 
   &__desc {
@@ -26,6 +30,10 @@
     line-height: 42px;
     margin: 0;
     margin-bottom: 50px;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
   }
 }
 

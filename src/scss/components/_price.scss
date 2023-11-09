@@ -35,12 +35,20 @@
     letter-spacing: 0.84px;
     margin-top: 27px;
     z-index: 20;
+
+    @include small-tablet {
+      font-size: 24px;
+    }
   }
 
   &__desc {
     font-size: 28px;
     line-height: 42px;
     flex: 0 0 49%;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
   }
 
     &__list {
@@ -51,6 +59,8 @@
       display: flex;
       justify-content: space-between;
       margin-top: 59px;
+      position: relative;
+      z-index: 30;
   }
 }
 
@@ -59,7 +69,8 @@
       padding-bottom: 59px;
 
     &__content {
-
+      position: relative;
+      z-index: 30;
     }
 
     &__title {
@@ -68,6 +79,10 @@
       font-weight: 400;
       margin: 0;
       margin-bottom: 22px;
+
+      @include small-tablet {
+        font-size: 24px;
+      }
 
     }
 
@@ -155,6 +170,10 @@
       line-height: 63px;
       z-index: 20;
       letter-spacing: 1px;
+
+      @include small-tablet {
+        font-size: 32px;
+      }
     }
 
     &__svg {
