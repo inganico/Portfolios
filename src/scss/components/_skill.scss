@@ -2,10 +2,19 @@
 .skill {
   padding-bottom: 181px;
 
+  @include mobile {
+    padding-bottom: 100px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
@@ -18,10 +27,23 @@
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 18px;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.36px;
+    }
   }
 
   &__desc {
     line-height: 21px;
     margin: 0;
+
+    @include mobile {
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: 0.36px;
+      margin-bottom: 20px;
+    }
   }
 }
