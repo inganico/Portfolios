@@ -2,9 +2,6 @@
   position: relative;
   padding-bottom: 63px;
 
-
-
-
   &__img {
 
     @include mobile {
@@ -195,10 +192,6 @@
       }
     }
   }
-
-  &__link {
-
-  }
 }
 
 .hero-btn {
@@ -217,8 +210,13 @@
     display: block;
     width: 15px;
     height: 10px;
-    top: 4px;
-    left: 130px;
+    top: 6px;
+    left: 155px;
+
+    @include mobile {
+      top: 2px;
+      left: 130px;
+    }
   }
 
   @include mobile {
@@ -226,6 +224,7 @@
     font-size: 12px;
     background: transparent;
     color: $dark-black;
+
   }
 }
 

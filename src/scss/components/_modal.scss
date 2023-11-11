@@ -20,11 +20,15 @@
     z-index: 1;
     background-color: white;
     padding: 55px 15px 40px 15px;
-    margin: 30px 15px;
+    margin: 50px 15px 20px 15px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     transform: scale(0);
     transition: transform .8s ease;
     position: relative;
+
+    @include mobile {
+      max-width: 410px;
+    }
   }
 
   &__close-btn {
@@ -94,6 +98,12 @@
     margin: 0;
     margin-bottom: 15px;
     width: 400px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.48px;
+    }
   }
 
   &__text {
@@ -103,6 +113,12 @@
     color: $dark-black;
     margin: 0;
     margin-bottom: 30px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
   }
 
 
@@ -120,5 +136,10 @@
 .modal-form {
   border-top: 1px solid $dark-black;
   padding-top: 45px;
+
+  @include mobile {
+    padding-top: 15px;
+  }
+
 }
 

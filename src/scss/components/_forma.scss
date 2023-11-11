@@ -65,7 +65,7 @@
   row-gap: 15px;
 
   @include mobile {
-    width: 350px;
+
   }
 
   &__label {
@@ -101,7 +101,6 @@
     transition: background 0.25s ease;
 
     @include mobile {
-      width: 350px;
       padding: 20px 0px;
       margin-bottom: 30px;
     }
@@ -121,9 +120,6 @@
       padding-left: 14px;
     }
 
-    &__option {
-
-    }
 }
 
 .form-group-title {
