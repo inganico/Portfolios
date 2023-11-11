@@ -146,6 +146,10 @@
       bottom: -4px;
       left: 125px;
       opacity: 0.3;
+
+      @include tablet {
+        left: 118px;
+      }
     };
   }
 }

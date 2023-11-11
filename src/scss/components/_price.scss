@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__svg {
@@ -25,6 +29,10 @@
     border-bottom: 1px solid $dark-black;
     padding-bottom: 50px;
     margin-bottom: 60px;
+
+    @include mobile {
+      padding-bottom: 30px;
+    }
   }
 
   &__title {
@@ -39,6 +47,12 @@
     @include small-tablet {
       font-size: 24px;
     }
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.48px;
+    }
   }
 
   &__desc {
@@ -48,11 +62,13 @@
 
     @include small-tablet {
       font-size: 20px;
+      z-index: 20;
     }
-  }
 
-    &__list {
-
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
     &__item {
@@ -84,6 +100,11 @@
         font-size: 24px;
       }
 
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
     }
 
     &__desc {
@@ -91,6 +112,12 @@
       font-weight: 500;
       line-height: 24px;
       margin-bottom: 75px;
+
+      @include mobile {
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 40px;
+      }
     }
 
     &__btn {
@@ -104,6 +131,11 @@
       margin: 0;
       cursor: pointer;
 
+      @include mobile {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
       &::after {
         content: '';
         position: absolute;
@@ -115,6 +147,11 @@
         height: 10px;
         top: 8px;
         left: 155px;
+
+        @include mobile {
+          top: 4px;
+          left: 130px;
+        }
       }
     }
   }
@@ -130,6 +167,11 @@
       line-height: 24px;
       margin: 0;
       margin-bottom: 22px;
+
+      @include mobile {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
 
     &__list {
@@ -137,6 +179,10 @@
       padding-left: 13px;
       list-style: none;
       margin-bottom: 40px;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
     }
 
     &__item {
@@ -152,6 +198,11 @@
         top: 14px;
         left: -15px;
         border-radius: 50%;
+
+        @include mobile {
+          top: 8px;
+          left: -12px;
+        }
       }
     }
 
@@ -159,7 +210,12 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 32px;
-      margin: 0
+      margin: 0;
+
+      @include mobile {
+        font-size: 12px;
+        line-height: 24px;
+      }
     }
 
     &__price {
@@ -173,6 +229,11 @@
 
       @include small-tablet {
         font-size: 32px;
+      }
+
+      @include mobile {
+        font-size: 22px;
+        line-height: 33px;
       }
     }
 

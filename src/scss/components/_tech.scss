@@ -1,6 +1,10 @@
 .tech {
   padding-bottom: 154px;
 
+  @include mobile {
+    padding-bottom: 100px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

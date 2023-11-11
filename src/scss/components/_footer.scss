@@ -1,9 +1,17 @@
 .footer {
   padding-bottom: 50px;
 
+  @include mobile {
+    padding-bottom: 20px;
+  }
+
   &__nav {
     position: relative;
     margin-bottom: 19px;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
 
     &::after {
       content: '';

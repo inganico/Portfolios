@@ -5,6 +5,10 @@
   justify-content: space-between;
   border-bottom: 1px solid $dark-black;
   padding: 6px 0;
+
+  @include mobile {
+    column-gap: 10px;
+  }
 }
 
 
@@ -16,6 +20,10 @@
 .details {
   padding-bottom: 185px;
 
+  @include mobile {
+    padding-bottom: 85px;
+  }
+
   &__title {
     font-size: 28px;
     line-height: 42px;
@@ -24,17 +32,33 @@
     @include small-tablet {
       font-size: 20px;
     }
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__span {
     font-size: 28px;
     line-height: 42px;
     margin-right: 40px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 10px;
+    }
   }
 
   &__desc {
     flex: 0 0 49%;
     font-size: 16px;
     line-height: 24px;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }

@@ -1,11 +1,20 @@
 .forma {
   padding-bottom: 185px;
 
+  @include mobile {
+    padding-bottom: 85px;
+  }
+
   &__wrap {
     display: flex;
     justify-content: space-between;
 
     @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include mobile {
       flex-direction: column;
       align-items: center;
     }
@@ -41,6 +50,11 @@
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+
+  @include mobile {
+    max-width: 350px;
+    margin: 0 15px;
+  }
 }
 
 .form {
@@ -49,6 +63,10 @@
   align-items: flex-start;
   flex-direction: column;
   row-gap: 15px;
+
+  @include mobile {
+    width: 350px;
+  }
 
   &__label {
     font-size: 12px;
@@ -81,6 +99,12 @@
     line-height: 24px;
     cursor: pointer;
     transition: background 0.25s ease;
+
+    @include mobile {
+      width: 350px;
+      padding: 20px 0px;
+      margin-bottom: 30px;
+    }
 
     &:hover {
       background: rgb(167, 30, 30);
@@ -214,6 +238,10 @@ Select c dropdown на JS
   border: none;
 	cursor: pointer;
   margin-bottom: 23px;
+
+  @include mobile {
+    max-width: 350px;
+  }
 }
 
 .dropdown__button:focus, .dropdown__button--active {
